@@ -1,5 +1,5 @@
-name: angular_app
-description: A web app that uses AngularDart
+name: cropper_web
+description: A web app to crop and slice images
 version: 0.0.1
 
 environment:
@@ -7,6 +7,8 @@ environment:
 
 dependencies:
   angular: ^5.0.0-beta
+  angular_router: ^2.0.0-alpha+15
+  angular_components: ^0.9.0-beta
 
 dev_dependencies:
   angular_test: ^2.0.0-beta
