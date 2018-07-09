@@ -1,2 +1,9 @@
 <h2>Upload</h2>
-<p>Lorem ipsum dolor sit amet</p>
+<form>
+    <label class="button-primary">
+        <input type="file" (change)="onUploadButtonClicked($event)">
+    </label>
+    <div *ngIf="loading">
+        Loading ...
+    </div>
+</form>
