@@ -1,2 +1,8 @@
 <h2>Edit</h2>
-<p>Lorem ipsum dolor sit amet</p>
+<canvas id="canvas" #canvas></canvas>
+<aside *ngIf="image != null">
+  <form>
+    <label>Ratio: </label><input type="number" min="1" [(ngModel)]="ratio" max="10"><br>
+    <label>Size: </label><input type="range" [(ngModel)]="size" min="1" max="{{image.height}}"><br>{{size}}
+  </form>
+</aside>
