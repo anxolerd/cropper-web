@@ -4,5 +4,7 @@
   <form>
     <label>Ratio: </label><input type="number" min="1" [(ngModel)]="ratio" max="10"><br>
     <label>Size: </label><input type="range" [(ngModel)]="size" min="1" max="{{image.height}}"><br>{{size}}
+
+    <button (click)="doCrop()">Crop!</button>
   </form>
 </aside>
