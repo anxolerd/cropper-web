@@ -10,9 +10,8 @@ class ImageService {
     _image = decodeImage(imageBytes);
   }
 
-  Image getImage() {
-    return _image;
-  }
+  Image getImage() => _image;
+  List<Image> getSlices() => slices;
 
   Future<void> slice(int x, int y, int height, int n) {
     int sliceWidth = height;
